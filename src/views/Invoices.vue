@@ -40,15 +40,15 @@
           <stats-card
             title="Cancelled"
             type="gradient-orange"
-            sub-title="2,356"
+            sub-title="3"
             icon="ni ni-fat-remove"
             class="mb-4 mb-xl-0"
           >
             <template slot="footer">
-              <span class="text-danger mr-2">
-                <i class="fa fa-arrow-up"></i> 12.18%
+              <span class="text-warning mr-2">
+                <i class="fa fa-arrow-up"></i>$ 3,500
               </span>
-              <span class="text-nowrap">Since last month</span>
+              <!-- <span class="text-nowrap">Since last month</span> -->
             </template>
           </stats-card>
         </div>

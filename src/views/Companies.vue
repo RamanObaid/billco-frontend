@@ -1,8 +1,6 @@
 <template>
   <div>
-    <base-header type="gradient-success" class="pb-6 pb-8 pt-5 pt-md-8">
-      
-    </base-header>
+    <base-header type="gradient-success" class="pb-6 pb-8 pt-5 pt-md-8"></base-header>
 
     <div class="container-fluid mt--7">
       <div class="row">
@@ -55,27 +53,33 @@ export default {
   components: {
     ProjectsTable
   },
-  data(){
+  data() {
     return {
-      tableData: [{
+      tableData: [
+        {
+          img: "img/theme/angular.jpg",
+          name: "Example",
+          sector: "Law Firm",
+          phone: "750 456 78 90",
+          address: "Iraq, Slemani, Baxtiyari",
+          email: "info@Example.com",
+          status: "completed",
+          statusType: "success",
+          completion: 100
+        },
+        {
           img: "img/theme/bootstrap.jpg",
           name: "ABC",
-          sector: 'IT Services',
+          sector: "IT Services",
+          email: "inquiry@abcltd.com",
+          address: "Iraq, Erbil, Zanko",
           phone: "770 123 45 67",
           status: "pending",
           statusType: "warning",
           completion: 60
-        },
-        {
-          img: "img/theme/angular.jpg",
-          name: "Example",
-          sector: 'Law Firm',
-          phone: "750 456 78 90",
-          status: "completed",
-          statusType: "success",
-          completion: 100
-        }]
-    }
+        }
+      ]
+    };
   }
 };
 </script>

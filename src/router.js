@@ -32,6 +32,10 @@ export default new Router({
           component: () => import(/* webpackChunkName: "demo" */ './views/Invoice/Cancelled.vue')
         },
         {
+          path: '/pay',
+          component: () => import(/* webpackChunkName: "demo" */ './views/Bills/Upcoming.vue')
+        },
+        {
           path: '/bills',
           component: () => import(/* webpackChunkName: "demo" */ './views/Bills.vue')
         },

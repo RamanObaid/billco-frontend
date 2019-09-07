@@ -326,7 +326,8 @@ export default {
     discountAmount() {
       var i = this.model.discount.indexOf("%");
       if (i > 0) {
-        return this.subtotal * (1 - this.model.discount.substring(0, i) / 100);
+        var percent = this.model.discount.substring(0, i) / 100;
+        return this.subtotal * percent;
       } else {
         return this.model.discount;
       }
